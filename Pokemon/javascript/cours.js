@@ -43,7 +43,7 @@ function ContentFrame(page) {
 function menuDeroulant(id)
 {
     var element = document.getElementById(id);
-    var etat = element.style.display;
+    var etat = element.style.display; 
      
     if (etat == none)
         element.style.display = 'block';
