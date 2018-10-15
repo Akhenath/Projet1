@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="C:\Users\florian.greck\git\Projet1\Pokemon\css\cours.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="C:\Users\florian.greck\git\Projet1\Pokemon\javascript\cours.js"></script>
+    <title>Introduction à JavaScript</title>
+</head>
+
+<body>
+<!-- Onglets-->
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='#' onClick="refresh()">Refresh</a></li>
+            <li><a href='#' onClick="gen1()">Génération 1</a></li>
+            <li><a href='#' onClick="gen2()">Génération 2</a></li>
+            <li><a href='#' onClick="gen3()">Génération 3</a></li>
+        </ul>
+    </div>
+
+
+<!-- Onglet Génération 1-->
+	<div id='gen1_1'style="visibility:hidden">
+		<ul style="position:absolute">
+			 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/1-bulbizarre")'>  <img src='C:\Users\florian.greck\git\Projet1\Pokemon\icons\Pokemon\001-bulbizarre.png'/></a>
+    		 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/4-salameche")'> 	 <img src='C:\Users\florian.greck\git\Projet1\Pokemon\icons\Pokemon\007-salameche.png'/></a>
+    		 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/7-carapuce")'>	 <img src='C:\Users\florian.greck\git\Projet1\Pokemon\icons\Pokemon\004-carapuce.png'/></a>
+<!--     		 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/10-chenipan")'>	<img src='C:\Users\florian.greck\Documents\Eclipse - Workspace\Projet1\icons\pokemon\010-chenipan.png'/></a> -->
+<!--     		 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/13-aspicot")'>	<img src='C:\Users\florian.greck\Documents\Eclipse - Workspace\Projet1\icons\pokemon\013-aspicot.png'/></a> -->
+		</ul>
+	</div>
+	
+<!-- Onglet Génération 2-->
+	<div id='gen2_1'style="visibility:hidden">
+		<ul style="position:absolute">
+			 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/152-germignon")'>  <img src='C:\Users\florian.greck\git\Projet1\Pokemon\icons\Pokemon\152-germignon.png'/></a>
+    		 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/155-hericendre")'> <img src='C:\Users\florian.greck\git\Projet1\Pokemon\icons\Pokemon\155-hericendre.png'/></a>
+    		 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/158-kaiminus")'>	  <img src='C:\Users\florian.greck\git\Projet1\Pokemon\icons\Pokemon\158-kaiminus.png'/></a>
+	</div>
+	
+<!-- Onglet Génération 3-->
+	<div id='gen3_1'style="visibility:hidden">
+		<ul style="position:absolute">
+			 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/252-arcko")'> 	  <img src='C:\Users\florian.greck\git\Projet1\Pokemon\icons\Pokemon\252-arcko.png'/></a>
+    		 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/255-poussifeu")'>  <img src='C:\Users\florian.greck\git\Projet1\Pokemon\icons\Pokemon\255-poussifeu.png'/></a>
+    		 <a href="#" onClick='ContentFrame("https://pokemon.gameinfo.io/fr/pokemon/258-gobou")'>	  <img src='C:\Users\florian.greck\git\Projet1\Pokemon\icons\Pokemon\258-gobou.png'/></a>
+		</ul>
+	</div>
+
+<!-- Frame pour visualisation HTML implémentée -->
+	<div style="position:absolute;  top: 70px; left: 890px;">
+		<iframe id="contentframe" style=visibility:hidden width="1010" height="850"></iframe>
+	</div>
+
+
+
+</body>
+	
+	
